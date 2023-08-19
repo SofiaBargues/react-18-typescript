@@ -14,3 +14,4 @@ const Buttom = ({ children, onClick, variant = "primary" }: Props) => {
 };
 
 export default Buttom;
+// app necesito un estado que se llame
