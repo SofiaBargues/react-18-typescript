@@ -3,10 +3,15 @@ import { ReactNode } from "react";
 interface Props {
   children: ReactNode;
 }
+
 const Alert = ({ children }: Props) => {
+  const isVisible = true;
   return (
     <div
-      className="alert alert-warning alert-dismissible fade show"
+      className={
+        "alert alert-warning alert-dismissible fade" +
+        (isVisible ? " show" : " ")
+      }
       role="alert"
     >
       {children}
