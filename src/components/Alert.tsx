@@ -3,11 +3,11 @@ import { useState } from "react";
 
 interface Props {
   children: ReactNode;
-  onClick: () => void;
+  isVisible: boolean;
+  setIsVisible: (visible: boolean) => void;
 }
 
-const Alert = ({ children, onClick }: Props) => {
-  const [isVisible, setIsVisible] = useState(true);
+const Alert = ({ children, isVisible, setIsVisible }: Props) => {
   return (
     <div
       className={
