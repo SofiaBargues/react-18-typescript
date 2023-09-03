@@ -1,29 +1,16 @@
-import { useState } from "react";
-import Message from "./components/Message";
+import { SharingState } from "./components/SharingState";
+import { UpdateArray } from "./components/UpdateArray";
+import { UpdateArrayOfObjects } from "./components/UpdateArrayOfObjects";
+import { UpdateImmer } from "./components/UpdateImmer";
 
 function App() {
-  const [, setCostumer] = useState({
-    title: "John",
-    address: {
-      city: "San Francisco",
-      zipcode: 94111,
-    },
-  });
-  const handleClick = () => {
-    setCostumer({ ...costumer, price: 6 });
-  };
-  // const handleClick = () => {
-  //   drink.price = 6;
-  //   setDrink(drink);
-  // };
-
+  console.log("hi");
   return (
     <div>
-      {drink.price}
-      <button onClick={handleClick}> Click Me</button>
-      {/* <Message></Message>
-      <Message></Message>
-      <Message></Message> */}
+      <UpdateArray />
+      <SharingState />
+      <UpdateImmer />
+      <UpdateArrayOfObjects />
     </div>
   );
 }
