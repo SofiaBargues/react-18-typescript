@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <UpdateArray />
+      <UpdateArray />
       <SharingState />
       <UpdateImmer />
       <UpdateArrayOfObjects />
